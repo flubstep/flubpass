@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Hello React</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="/static/js/main.js" type="text/jsx"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type="text/jsx">
+	    React.render(
+	      <PassageMain starting="{{ starting }}"/>,
+	      document.getElementById('content')
+	    );
+	</script>
+  </body>
+</html>
